@@ -6,14 +6,14 @@ namespace WebApplicationShopOnline.Controllers
 {
     public class ProductController : Controller
     {
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
-        public string Index(string name, string description, decimal price)
+        public IActionResult Index()
         {
-            Product product = new Product(name, description, price);
-            return product.ToString();
+            return View();
         }
+        //public string Index(string name, string description, decimal price)
+        //{
+        //    Product product = new Product(name, description, price);
+        //    return product.ToString();
+        //}
     }
 }
